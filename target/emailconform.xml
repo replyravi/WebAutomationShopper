@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="263.84">
+    <testcase classname="Automation for mail conformation and verify the mail approved" name="Mail conformation and verify the mail approved with all attachment" time="263.675">
+        <failure message="Unable to locate element: Confirm e-mail&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'&#10;System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3976, moz:profile: C:\Users\ravi\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 81690bcf-54d2-4c17-af43-8d4caa9ccc92&#10;*** Element info: {Using=link text, value=Confirm e-mail}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Login MitId...........................................................passed
+And Click on Autofill button then after copy Identity Claim random text.....passed
+Then Click on identity......................................................passed
+Given Open shopper link and click login with MitId..........................passed
+Then Past Identity Claim in User Id text field click continue...............passed
+Then Switch Mit Id and scroll down and click on click then open simulator...passed
+And Click conform button....................................................passed
+Given Switch to MitId browser and copy CPR number...........................passed
+And Switch to shopper browser and enter CPR number then click...............passed
+Then Enter your phone number and email id then more action for signup.......passed
+Then Navigate to tab and open mail account..................................failed
+Given Enter username and password then login................................skipped
+Then Click on conform email received by Anyday..............................skipped
+Then Verify conform mail have attachment and then click on conform email....skipped
+Then Wait for maximum ten minutes for approved mail.........................skipped
+Then Received approved mail then click on it and verify mail have attachment.skipped
+Then Switch to shopper tab and conform email conformation option not showing.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: Confirm e-mail
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3976, moz:profile: C:\Users\ravi\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 81690bcf-54d2-4c17-af43-8d4caa9ccc92
+*** Element info: {Using=link text, value=Confirm e-mail}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:386)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at stepDefinitions.EmailConformationfunction.navigate_to_tab_and_open_mail_account(EmailConformationfunction.java:368)
+	at ✽.Navigate to tab and open mail account(file:///C:/Users/ravi/eclipse-workspace/Anyday/src/test/java/features/EmailConformation.feature:19)
+]]></failure>
+    </testcase>
+</testsuite>

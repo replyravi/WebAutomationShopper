@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.34">
+    <testcase classname="Automation Test Step for shopper Login automation with MitId testing tools" name="Login automation with MitId testing tools" time="0.096">
+        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Open Mit Id testing tool Link.........................................undefined
+When Click upper left side search box and type CPR number which you want to login.skipped
+Then Click on search box and copy create identity...........................skipped
+Given Switch new tab and open shopper link and paste create identity click on continue.skipped
+Then Switch to Mit Id tab and scroll to Open simulator and click it.........skipped
+Then Switch to open simulator and click on conform it.......................skipped
+Then Switch to Mit Id and copy CPR number...................................skipped
+Then Switch shopper tab paste CPR number and click continue.................skipped
+]]></failure>
+    </testcase>
+</testsuite>

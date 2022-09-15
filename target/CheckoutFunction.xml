@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="151.965">
+    <testcase classname="Test case for checkout function" name="checkout function with mock Web shop" time="151.791">
+        <system-out><![CDATA[Given Open admin page of Anyday.............................................passed
+Then Enter username and password click Sign In..............................passed
+Then Navigate to left side and click on Merchants option....................passed
+Then Scroll horizontal till Details column and click on eyes icon...........passed
+Given Navigate to API tab and click regenerate API key button...............passed
+Given Copy API key with click on copy icon..................................passed
+Then Logout Anyday admin page and switch windows to mock webshop form.......passed
+Then Open mock webshop form past API key in Merchant API key text field.....passed
+Given Fill total price more then three hundred price........................passed
+Then Enter URL for navigate shopper page and click on submit button.........passed
+Given Navigate to shopper page and follow login steps.......................passed
+Given verify all the payments instalment and check box click on Pay First Instalment.passed
+]]></system-out>
+    </testcase>
+</testsuite>
