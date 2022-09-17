@@ -19,11 +19,11 @@ steps:
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
-    options: 'test -Dcucumber.filter.tags="@Signup"'
+    goals: 'test -Dcucumber.filter.tags="@Signup"'
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
+
 
 
