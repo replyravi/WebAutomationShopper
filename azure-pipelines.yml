@@ -20,7 +20,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-    options: 'test -Dcucumber.filter.tags="@LoginSlovenia"'
+    options: 'test -Dcucumber.filter.tags="@Signup"'
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
     effectivePomSkip: false
