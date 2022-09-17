@@ -2,7 +2,7 @@
    
 @Signup
 
-Feature: Automation Test Step for shopper signup with mitId testing tools 
+Feature: Automation Test Step for shopper signup with mitId testing tool
 
 
   
