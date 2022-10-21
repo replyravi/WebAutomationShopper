@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="217.966">
-    <testcase classname="After signup automation apply for higher credit if user equal and more then 21 Age" name="signup automation apply for higher credit" time="217.757">
-        <system-out><![CDATA[Given Login Mit id..........................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="165.338">
+    <testcase classname="After signup automation apply for higher credit if user equal and more then 21 Age" name="signup automation apply for higher credit" time="164.98">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id='phoneNumber']&quot;}&#10;  (Session info: chrome=106.0.5249.119)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'&#10;System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 01659820c9c26983880437b3ba4e1afa&#10;*** Element info: {Using=xpath, value=//input[@id='phoneNumber']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Login Mit id..........................................................passed
 And Click on Autofill button and after copy Identity claim random text......passed
 Then Click on create Identity...............................................passed
 Given Open shopper link and click login with Mit id.........................passed
@@ -9,16 +9,44 @@ Then Past Identity Claim in User Id text field and click on Continue........pass
 Then Switch Mit Id and scroll down and click on click on open Simulator.....passed
 And Click Conform...........................................................passed
 Given Switch to Mit Id browser and copy CPR Number..........................passed
-And Switch to shopper browser and enter CPR number and Click................passed
-Then Enter your phone number and email id and more action for Signup........passed
-Given Click on Apply Now for higher credit limit............................passed
-Then Click on Accept payment information....................................passed
-Then Click on connect to my bank option.....................................passed
-Given Click on Continue bank option.........................................passed
-Then Click on demo bank option..............................................passed
-Then enter CPR number and mobile code in the text field and click on continue.passed
-Given Click on Checking Account and click continue..........................passed
-Then Click on continue......................................................passed
-]]></system-out>
+And Switch to shopper browser and enter CPR number and Click................failed
+Then Enter your phone number and email id and more action for Signup........skipped
+Given Click on Apply Now for higher credit limit............................skipped
+Then Click on Accept payment information....................................skipped
+Then Click on connect to my bank option.....................................skipped
+Given Click on Continue bank option.........................................skipped
+Then Click on demo bank option..............................................skipped
+Then enter CPR number and mobile code in the text field and click on continue.skipped
+Given Click on Checking Account and click continue..........................skipped
+Then Click on continue......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='phoneNumber']"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56716}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 01659820c9c26983880437b3ba4e1afa
+*** Element info: {Using=xpath, value=//input[@id='phoneNumber']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at stepDefinitions.HigherCreditApply.switch_to_shopper_browser_and_enter_cpr_number_and_click(HigherCreditApply.java:209)
+	at ✽.Switch to shopper browser and enter CPR number and Click(file:///C:/Users/ravi/eclipse-workspace/Anyday/src/test/java/features/Applyforhigher.feature:18)
+]]></failure>
     </testcase>
 </testsuite>

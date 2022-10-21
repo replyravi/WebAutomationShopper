@@ -38,7 +38,7 @@ public class HigherCreditApply extends Stordvaule {
         /*String identity= driver.findElement(By.cssSelector("input[placeholder='Enter Identity Claim']")).getAttribute("value");
         System.out.println(identity);*/
         
-   System.out.println("Ravi");
+   System.out.println("First Test Pass");
    //super.storevalue();
    //String text=super.storevalue();
    //String textvalue=super.storevalue();

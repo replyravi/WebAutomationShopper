@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="263.84">
-    <testcase classname="Automation for mail conformation and verify the mail approved" name="Mail conformation and verify the mail approved with all attachment" time="263.675">
-        <failure message="Unable to locate element: Confirm e-mail&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'&#10;System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3976, moz:profile: C:\Users\ravi\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 81690bcf-54d2-4c17-af43-8d4caa9ccc92&#10;*** Element info: {Using=link text, value=Confirm e-mail}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Login MitId...........................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="60.223">
+    <testcase classname="Automation for mail conformation and verify the mail approved" name="Mail conformation and verify the mail approved with all attachment" time="59.888">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=106.0.5249.119)&#10;Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'&#10;System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4b982da0b6abd38bd05fd002cd40e649&#10;*** Element info: {Using=xpath, value=//button[@id='simulator-app-confirm-request']}" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given Login MitId...........................................................passed
 And Click on Autofill button then after copy Identity Claim random text.....passed
 Then Click on identity......................................................passed
 Given Open shopper link and click login with MitId..........................passed
 Then Past Identity Claim in User Id text field click continue...............passed
 Then Switch Mit Id and scroll down and click on click then open simulator...passed
-And Click conform button....................................................passed
-Given Switch to MitId browser and copy CPR number...........................passed
-And Switch to shopper browser and enter CPR number then click...............passed
-Then Enter your phone number and email id then more action for signup.......passed
-Then Navigate to tab and open mail account..................................failed
+And Click conform button....................................................failed
+Given Switch to MitId browser and copy CPR number...........................skipped
+And Switch to shopper browser and enter CPR number then click...............skipped
+Then Enter your phone number and email id then more action for signup.......skipped
+Then Navigate to tab and open mail account..................................skipped
 Given Enter username and password then login................................skipped
 Then Click on conform email received by Anyday..............................skipped
 Then Verify conform mail have attachment and then click on conform email....skipped
@@ -20,14 +20,15 @@ Then Received approved mail then click on it and verify mail have attachment.ski
 Then Switch to shopper tab and conform email conformation option not showing.skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: Unable to locate element: Confirm e-mail
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
 Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
 System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 3976, moz:profile: C:\Users\ravi\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 81690bcf-54d2-4c17-af43-8d4caa9ccc92
-*** Element info: {Using=link text, value=Confirm e-mail}
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52634}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b982da0b6abd38bd05fd002cd40e649
+*** Element info: {Using=xpath, value=//button[@id='simulator-app-confirm-request']}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -40,11 +41,11 @@ Session ID: 81690bcf-54d2-4c17-af43-8d4caa9ccc92
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:386)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:446)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
-	at stepDefinitions.EmailConformationfunction.navigate_to_tab_and_open_mail_account(EmailConformationfunction.java:368)
-	at ✽.Navigate to tab and open mail account(file:///C:/Users/ravi/eclipse-workspace/Anyday/src/test/java/features/EmailConformation.feature:19)
+	at stepDefinitions.EmailConformationfunction.click_conform_button(EmailConformationfunction.java:160)
+	at ✽.Click conform button(file:///C:/Users/ravi/eclipse-workspace/Anyday/src/test/java/features/EmailConformation.feature:15)
 ]]></failure>
     </testcase>
 </testsuite>
