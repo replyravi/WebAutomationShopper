@@ -13,8 +13,8 @@ public class LoginStepdefination extends Stordvaule{
 		// TODO Auto-generated constructor stub
 	}
 
-	@Given("^Open Mit Id testing tool Link$")
-    public void open_mit_id_testing_tool_link() throws Throwable {
+	@Given("^Open Mit Id testing tool Link kit$")
+    public void open_mit_id_testing_tool_link_kit() throws Throwable {
 		super.login();
 		
         }

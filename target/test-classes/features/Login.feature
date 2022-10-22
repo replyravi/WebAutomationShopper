@@ -8,7 +8,7 @@ Feature: Automation Test Step for shopper Login automation with MitId testing to
 Scenario Outline: Login automation with MitId testing tools
 
 
-  Given Open Mit Id testing tool Link
+  Given Open Mit Id testing tool Link kit
   When Click upper left side search box and type CPR number which you want to login
   Then Click on search box and copy create identity
   Given Switch new tab and open shopper link and paste create identity click on continue

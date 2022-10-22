@@ -45,8 +45,8 @@ public class StepdefinationSignupflow extends Stordvaule{
 	
 	public StepdefinationSignupflow() throws MalformedURLException {}
 	
-	@Given("^Login Mit Id Page$")
-    public void login_mit_id_Page() throws Throwable {
+	@Given("^Login Mit Id Page anyday$")
+    public void login_mit_id_Page_anyday() throws Throwable {
 		driver.get("https://pp.mitid.dk/test-tool/frontend/#/create-identity");
 		driver.manage().window().maximize();
 		

@@ -8,7 +8,7 @@ Feature: Automation Test Step for shopper signup with mitId testing tool
   
   Scenario Outline: signup with mitId testing tools
   
-    Given Login Mit Id Page
+    Given Login Mit Id Page anyday
     And Click on Autofill button and after copy Identity Claim random text formate
     Then Click on create identity icon
     Given Open shopper link and click login with Mit Id page

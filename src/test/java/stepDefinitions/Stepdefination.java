@@ -43,8 +43,8 @@ public class Stepdefination extends Stordvaule{
 	
 	public Stepdefination() throws MalformedURLException {}
 	
-	@Given("^Login Mit Id$")
-    public void login_mit_id() throws Throwable {
+	@Given("^Login Mit Id anyday$")
+    public void login_mit_id_anyday() throws Throwable {
 		driver.get("https://pp.mitid.dk/test-tool/frontend/#/create-identity");
 		driver.manage().window().maximize();
 		
