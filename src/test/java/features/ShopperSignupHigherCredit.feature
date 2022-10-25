@@ -6,7 +6,7 @@ Feature: Automation Test Step for shopper signup with mitId testing tool
 
 
   
-  Scenario Outline: signup with mitId testing tools
+  Scenario Outline: SignupHigher with mitId testing tools
   
     Given Login Mit Id Page anyday
     And Click on Autofill button and after copy Identity Claim random text formate

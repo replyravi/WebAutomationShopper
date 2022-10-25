@@ -3,7 +3,7 @@
 
 Feature: Test case for checkout function
 
-Scenario Outline: checkout function with mock Web shop
+Scenario Outline: checkout function with mock Webshop
 
 Given Open admin page of Anyday
 Then Enter username and password click Sign In

@@ -2,11 +2,7 @@
    
 @Signup
 
-<<<<<<< HEAD
-Feature: Automation Test Step for shopper signup with mitId testing tool
-=======
-Feature: Automation Test Step for shopper signup with mitId testing tools
->>>>>>> 608f7e4220e4aa3666b4b6e8f61c1f04152b4e03
+Feature: Automation signup Test Step for shopper signup with mitId testing tool
 
 
   

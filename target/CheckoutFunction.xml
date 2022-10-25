@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="151.965">
-    <testcase classname="Test case for checkout function" name="checkout function with mock Web shop" time="151.791">
-        <system-out><![CDATA[Given Open admin page of Anyday.............................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="83.14">
+    <testcase classname="Test case for checkout function" name="checkout function with mock Web shop" time="82.701">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;body &gt; app-root:nth-child(2) &gt; div:nth-child(1) &gt; app-admin-dashboard:nth-child(2) &gt; app-anyday-dashboard:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; ul:nth-child(2) &gt; li:nth-child(4) &gt; anyday-dashboard-menu-item:nth-child(1) &gt; a:nth-child(1) &gt; span:nth-child(2)&quot;}&#10;  (Session info: chrome=106.0.5249.119)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'&#10;System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52764}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b58703745dc9e525117bf6fc04d38a5e&#10;*** Element info: {Using=css selector, value=body &gt; app-root:nth-child(2) &gt; div:nth-child(1) &gt; app-admin-dashboard:nth-child(2) &gt; app-anyday-dashboard:nth-child(1) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; ul:nth-child(2) &gt; li:nth-child(4) &gt; anyday-dashboard-menu-item:nth-child(1) &gt; a:nth-child(1) &gt; span:nth-child(2)}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Open admin page of Anyday.............................................passed
 Then Enter username and password click Sign In..............................passed
-Then Navigate to left side and click on Merchants option....................passed
-Then Scroll horizontal till Details column and click on eyes icon...........passed
-Given Navigate to API tab and click regenerate API key button...............passed
-Given Copy API key with click on copy icon..................................passed
-Then Logout Anyday admin page and switch windows to mock webshop form.......passed
-Then Open mock webshop form past API key in Merchant API key text field.....passed
-Given Fill total price more then three hundred price........................passed
-Then Enter URL for navigate shopper page and click on submit button.........passed
-Given Navigate to shopper page and follow login steps.......................passed
-Given verify all the payments instalment and check box click on Pay First Instalment.passed
-]]></system-out>
+Then Navigate to left side and click on Merchants option....................failed
+Then Scroll horizontal till Details column and click on eyes icon...........skipped
+Given Navigate to API tab and click regenerate API key button...............skipped
+Given Copy API key with click on copy icon..................................skipped
+Then Logout Anyday admin page and switch windows to mock webshop form.......skipped
+Then Open mock webshop form past API key in Merchant API key text field.....skipped
+Given Fill total price more then three hundred price........................skipped
+Then Enter URL for navigate shopper page and click on submit button.........skipped
+Given Navigate to shopper page and follow login steps.......................skipped
+Given verify all the payments instalment and check box click on Pay First Instalment.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"body > app-root:nth-child(2) > div:nth-child(1) > app-admin-dashboard:nth-child(2) > app-anyday-dashboard:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(4) > anyday-dashboard-menu-item:nth-child(1) > a:nth-child(1) > span:nth-child(2)"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
+System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52764}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b58703745dc9e525117bf6fc04d38a5e
+*** Element info: {Using=css selector, value=body > app-root:nth-child(2) > div:nth-child(1) > app-admin-dashboard:nth-child(2) > app-anyday-dashboard:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(2) > li:nth-child(4) > anyday-dashboard-menu-item:nth-child(1) > a:nth-child(1) > span:nth-child(2)}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:436)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
+	at stepDefinitions.Checkoutfunction.navigate_to_left_side_and_click_on_merchants_option(Checkoutfunction.java:44)
+	at ✽.Navigate to left side and click on Merchants option(file:///C:/Users/ravi/eclipse-workspace/Anyday/src/test/java/features/CheckoutFunction.feature:10)
+]]></failure>
     </testcase>
 </testsuite>

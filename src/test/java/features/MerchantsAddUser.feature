@@ -1,4 +1,4 @@
-Feature: Automation for merchants add user in different role
+Feature: Automation for merchant add user in different role
 
 
 @merchantsadduserowner

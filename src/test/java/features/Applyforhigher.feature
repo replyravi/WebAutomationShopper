@@ -5,7 +5,7 @@ Feature: After signup automation apply for higher credit if user equal and more 
 
 
   
-  Scenario Outline: signup automation apply for higher credit
+  Scenario Outline: signup Highercredit automation apply for higher credit
   
     Given Login Mit id
     And Click on Autofill button and after copy Identity claim random text

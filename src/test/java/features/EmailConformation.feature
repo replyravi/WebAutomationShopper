@@ -3,7 +3,7 @@
 
 Feature: Automation for mail conformation and verify the mail approved
   
-Scenario: Mail conformation and verify the mail approved with all attachment
+Scenario: Mail conformation and verify the mail approved with all attachment in the mail
 
 
 Given Login MitId

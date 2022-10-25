@@ -5,7 +5,7 @@ Feature: Automation Test Step for shopper Login automation with MitId testing to
 
 
   
-Scenario Outline: Login automation with MitId testing tools
+Scenario Outline: Login automation with MitId testing tool
 
 
   Given Open Mit Id testing tool Link kit
