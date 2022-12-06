@@ -20,7 +20,7 @@ public class Base {
 
 	public static WebDriver capabilities() throws MalformedURLException {
 		
-System.setProperty("webdriver.chrome.driver", "DriversC//chromedriver.exe");
+System.setProperty("webdriver.chrome.driver", "NDriverC//chromedriver.exe");
 
 WebDriver driver = new ChromeDriver();
 

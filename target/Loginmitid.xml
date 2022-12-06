@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="92.044">
-    <testcase classname="Automation Test Step for shopper Login automation with MitId testing tools" name="Login automation with MitId testing tools" time="91.763">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[class='p-mb-3 p-text-left mitid-button p-button p-component'] span[class='p-button-label']&quot;}&#10;  (Session info: chrome=106.0.5249.119)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'&#10;System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52590}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 35e448131c0e3405a8d56d655a81c3ff&#10;*** Element info: {Using=css selector, value=button[class='p-mb-3 p-text-left mitid-button p-button p-component'] span[class='p-button-label']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Open Mit Id testing tool Link.........................................failed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="35.179">
+    <testcase classname="Automation Test Step for shopper Login automation with MitId testing tools" name="Login automation with MitId testing tool" time="35.032">
+        <failure message="Cannot locate an element using css selector=button[class='p-mb-3 p-text-left mitid-button p-button p-component'] span[class='p-button-label']&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'&#10;System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given Open Mit Id testing tool Link kit.....................................failed
 When Click upper left side search box and type CPR number which you want to login.skipped
 Then Click on search box and copy create identity...........................skipped
 Given Switch new tab and open shopper link and paste create identity click on continue.skipped
@@ -11,33 +11,18 @@ Then Switch to Mit Id and copy CPR number...................................skip
 Then Switch shopper tab paste CPR number and click continue.................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[class='p-mb-3 p-text-left mitid-button p-button p-component'] span[class='p-button-label']"}
-  (Session info: chrome=106.0.5249.119)
+org.openqa.selenium.NoSuchElementException: Cannot locate an element using css selector=button[class='p-mb-3 p-text-left mitid-button p-button p-component'] span[class='p-button-label']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-1', revision: 'd1d3728cae', time: '2019-04-24T13:42:21'
 System info: host: 'RAVISINGH', ip: '192.168.43.175', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\ravi\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52590}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 35e448131c0e3405a8d56d655a81c3ff
-*** Element info: {Using=css selector, value=button[class='p-mb-3 p-text-left mitid-button p-button p-component'] span[class='p-button-label']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:190)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:124)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:328)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:331)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:436)
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:320)
 	at stepDefinitions.Stordvaule.login(Stordvaule.java:75)
-	at stepDefinitions.LoginStepdefination.open_mit_id_testing_tool_link(LoginStepdefination.java:18)
-	at ✽.Open Mit Id testing tool Link(file:///C:/Users/ravi/eclipse-workspace/Anyday/src/test/java/features/Login.feature:11)
+	at stepDefinitions.LoginStepdefination.open_mit_id_testing_tool_link_kit(LoginStepdefination.java:18)
+	at ✽.Open Mit Id testing tool Link kit(file:///C:/Users/ravi/eclipse-workspace/Anyday/src/test/java/features/Login.feature:11)
 ]]></failure>
     </testcase>
 </testsuite>
