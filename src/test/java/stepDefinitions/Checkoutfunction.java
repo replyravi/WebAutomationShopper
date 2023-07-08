@@ -29,7 +29,7 @@ public class Checkoutfunction extends Stordvaule{
 	     
 	    }
 
-	 @Then("^Enter username and password click Sign In$")
+	 @Then("^Enter username and password click Sign In$")//commit time
 	    public void enter_username_and_password_click_sign_in() throws Throwable {
 		 driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
 			driver.findElement(By.cssSelector("#Username")).sendKeys("superadmin@manaotest.com");
